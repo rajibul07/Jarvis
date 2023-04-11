@@ -70,8 +70,8 @@ def sendEmail(to, content):
     # server.connect("smtp.example.com",465)
     server.ehlo()
     server.startls()
-    server.login('pulakkumarghosh2001@gmail.com', 'Pulak@2001')
-    server.sendmail('pulakkumarghosh2001@gmail.com', to, content)
+    server.login('rajibulrahamanshaikh@gmail.com', 'Rajibul@07')
+    server.sendmail('rajibulrahamanshaikh@gmail.com', to, content)
     server.close( )
 
 if __name__ == '__main__':
@@ -110,11 +110,11 @@ if __name__ == '__main__':
             code_path = "C:\\Users\\USER\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(code_path)
 
-        elif 'email to pulak' in query:
+        elif 'email to Rajibul' in query:
             try:
                 speak("What should I say?")
                 content = takeCommand()
-                to = "ghoshpulak2901@gmail.com"
+                to = "rijusk5040@gmail.com"
                 sendEmail(to, content)
                 speak("Email has been sent")
             except Exception as e:
